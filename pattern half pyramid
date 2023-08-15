@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+void halfPyramid1(int n){
+	for(int i=1;i<=n;i++){
+		for(int j=1;j<=i;j++){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+}
+void halfPyramid2(int n){
+	for( int i=n;i>=1;i--){
+		for(int j=i;j>0;j--){
+			cout<<"* ";
+		}
+		cout<<endl;
+	}
+}
+
+void halfPyramid3(int n){
+	for(int i=1;i<=n;i++){
+		for(int k=n-i;k>0;k--)
+		    cout<<" ";	
+			
+		for(int j=1;j<=i;j++){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+}
+
+void halfPyramid4(int n){
+	for(int i=n;i>=1;i--){
+		for(int k=n-i;k>0;k--)
+			cout<<" ";
+		
+		for(int j=i;j>0;j--){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+}
+
+int main(){
+	
+	int num;
+	cout<<"enter the halfpyramid height: ";
+	cin>>num;
+	//halfPyramid1(num);
+	//cout<<endl;
+	
+    //halfPyramid2(num);
+	//cout<<endl;
+	
+	
+    //halfPyramid3(num);
+	//cout<<endl;
+	
+    halfPyramid4(num);
+	cout<<endl;
+	
+	
+	
+	
+	return 0;
+}
